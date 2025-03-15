@@ -1,2 +1,13 @@
-# streamlit-docker
-Docker compose file for streamlit deploy
+# Streamlit deploy guide for Docker
+
+**Build streamlit docker image**
+```
+docker build . -t python:streamlit
+```
+
+<br>
+
+**Deploy streamlit docker container**
+```
+docker compose up -d
+```
