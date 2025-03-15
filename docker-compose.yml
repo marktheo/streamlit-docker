@@ -1,0 +1,14 @@
+services:
+    streamlit:
+        restart: unless-stopped
+        container_name: streamlit
+        image: python:streamlit
+        ports:
+            - 8501:8501
+        working_dir: /app
+        volumes:
+            - streamlit-data:/app
+
+volumes:
+    streamlit-data:
+        external: true
